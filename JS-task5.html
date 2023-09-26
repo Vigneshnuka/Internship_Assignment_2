@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Task 5</title>
+    <style>
+        .text-Error {
+        display: inline;
+        color: red;
+        padding-left: 10px;
+        }
+        td:nth-child(odd) {
+        text-align: right;
+        }
+        input,
+        textarea {
+        border: 2px solid black;
+        }
+        .submit-button {
+        margin-left: 60px;
+        }
+        .textarea {
+        position: relative;
+        }
+        .textarea .text-Error {
+        margin-top: 0;
+        position: absolute;
+        top: 0;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="main-div">
+      <form>
+        <table cellspacing="13px">
+          <tr>
+            <td>
+              <lable for="Name">Name:</lable>
+            </td>
+            <td>
+              <input name="Name" type="text" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <lable for="email address">Email:</lable>
+            </td>
+            <td>
+              <input name="email address" type="email" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <lable for="url">Website:</lable>
+            </td>
+            <td>
+              <input name="url" type="url" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <lable for="Message">Message:</lable>
+            </td>
+            <td class="textarea">
+              <textarea name="Message" rows="4" cols="24"></textarea>
+            </td>
+          </tr>
+        </table>
+        <button class="submit-button">Submit</button>
+      </form>
+    </div>
+    <script src="JS-task5.js"></script>
+  </body>
+</html>
